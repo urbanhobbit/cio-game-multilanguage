@@ -1,0 +1,121 @@
+{
+  "header": {
+    "title_kids": "Crisis Game: Protect Your Country",
+    "title_adult": "CIO Crisis Management Game",
+    "subtitle_kids": "Balance security and freedom.",
+    "subtitle_adult": "Balance information disorders and rights.",
+    "badge_kids": "Kids Mode",
+    "badge_adult": "Full Version (React)",
+    "restart_button": "Restart Game"
+  },
+  "metrics": {
+    "security": "Security",
+    "freedom": "Freedom",
+    "public_trust": "Public Trust",
+    "resilience": "Resilience",
+    "fatigue": "Compliance Fatigue",
+    "budget": "Budget",
+    "hr": "Human Resources"
+  },
+  "start_screen": {
+    "profile_select": "Select Profile:",
+    "profile_adult": "Adult",
+    "profile_kids": "Child (10–12)",
+    "welcome_kids": "Welcome, decision maker!",
+    "welcome_adult": "Welcome!",
+    "intro_text_kids": "In this game, you are part of a team making decisions for an imaginary country during crises. While trying to protect people during earthquakes, fires, or epidemics, you must also respect their rights to speech and privacy.",
+    "intro_text_adult": "In this game, you are part of a team making information and policy decisions for an island nation during crises. Your duty is to ensure security while protecting freedom of expression and privacy during crises like earthquakes, fires, epidemics, and elections.",
+    "mechanic_text_kids": "In each mission, you will first learn what happened, then listen to advisors, and finally make a decision. Your choice will change indicators like security, freedom, public trust, and fatigue.",
+    "mechanic_text_adult": "In each crisis card, you will listen to advisors, choose an action card, and adjust scope, duration, and safeguards. Your choices will affect security, freedom, public trust, resilience, compliance fatigue, budget, and human resources.",
+    "scenarios_title_kids": "Missions you will face",
+    "scenarios_title_adult": "Crises to be played",
+    "btn_tutorial": "🎓 Start with Tutorial",
+    "btn_start": "⚡ Start Game Directly"
+  },
+  "common": {
+    "next": "Next",
+    "skip": "Skip",
+    "apply": "Apply",
+    "loading": "Loading...",
+    "mission": "Mission",
+    "mission_yours": "Your Mission",
+    "restart": "Restart Game"
+  },
+  "phases": {
+    "story_title_kids": "What is happening?",
+    "story_title_adult": "Situation Summary",
+    "btn_listen": "Listen to Advisors",
+    "advisors_title_kids": "What do advisors say?",
+    "advisors_title_adult": "Advisor Opinions",
+    "advisors_btn_kids": "Go to decision screen",
+    "advisors_btn_adult": "Proceed to decision phase",
+    "decision_title_kids": "Time to decide",
+    "decision_title_adult": "Decision Panel",
+    "immediate_title_kids": "What happened immediately?",
+    "immediate_title_adult": "Immediate Effects",
+    "delayed_title_kids": "What changed after a while?",
+    "delayed_title_adult": "Delayed Effects",
+    "report_title_kids": "Mission summary",
+    "report_title_adult": "Crisis Report",
+    "end_title_kids": "Game summary",
+    "end_title_adult": "Game Over",
+    "leadership_score": "Leadership Score"
+  },
+  "panel": {
+    "metrics_title": "Metrics Panel",
+    "fatigue_warning": "When compliance fatigue exceeds 50, legitimacy crisis risk increases. Trust and freedom must be balanced."
+  },
+  "tutorial": {
+    "title": "Short Tutorial (Trial Round)",
+    "desc_kids": "Each round has three steps: (1) Read the story of what's happening, (2) Listen to what advisors say, (3) Make a decision and adjust settings. The panel on the right shows how the country's status changes.",
+    "desc_adult": "In the game, you will look at three things each round: (1) Crisis card story, (2) Advisor suggestions, (3) Action card + scope, duration, and safeguards. The right panel shows how the crisis affects the country's metrics.",
+    "btn_end": "End tutorial, start game"
+  },
+  "decision": {
+    "resources_kids": "Your resources:",
+    "resources_adult": "Resources:",
+    "skip_warning_kids": "You don't have enough money or team power to play any cards this round. If you skip, indicators will get worse.",
+    "skip_warning_adult": "You don't have enough resources to play any card. Skipping this round will have a serious negative impact on indicators.",
+    "btn_skip_kids": "Skip turn (risky)",
+    "btn_skip_adult": "Skip turn (risky)",
+    "cards_title_kids": "Decision cards",
+    "cards_title_adult": "Action Cards",
+    "settings_title_kids": "Decision settings",
+    "settings_title_adult": "Policy Settings",
+    "btn_apply_kids": "Apply decision",
+    "btn_apply_adult": "Apply"
+  },
+  "settings_labels": {
+    "scope_kids": "For whom?",
+    "scope_adult": "Scope",
+    "duration_kids": "How long?",
+    "duration_adult": "Duration",
+    "safeguards_kids": "Add safeguards",
+    "safeguards_adult": "Safeguards"
+  },
+  "chips": {
+    "scope_targeted_kids": "Targeted group only",
+    "scope_targeted_adult": "Targeted",
+    "scope_general_kids": "Everyone",
+    "scope_general_adult": "General",
+    "duration_short_kids": "Short time",
+    "duration_short_adult": "Short",
+    "duration_medium_kids": "Medium",
+    "duration_medium_adult": "Medium",
+    "duration_long_kids": "Long time",
+    "duration_long_adult": "Long",
+    "safeguard_transparency_kids": "Explain clearly",
+    "safeguard_transparency_adult": "Transparency report",
+    "safeguard_appeal_kids": "Right to object",
+    "safeguard_appeal_adult": "Appeal mechanism",
+    "safeguard_sunset_kids": "Auto-end",
+    "safeguard_sunset_adult": "Sunset clause"
+  },
+  "feedback": {
+    "counter_factual_A_kids": "Another choice could have been less costly.",
+    "counter_factual_A_adult": "Alternative: Similar security could have been achieved with lower cost using B or C.",
+    "counter_factual_other_kids": "This was a balanced choice.",
+    "counter_factual_other_adult": "This choice was relatively proportional; your safeguards made a difference.",
+    "skip_reason": "Intervention failed due to lack of resources."
+  }
+}

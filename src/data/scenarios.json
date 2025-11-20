@@ -1,0 +1,117 @@
+{
+  "earthquake": {
+    "audience": "adult",
+    "icon": "🏚️",
+    "title": "Deprem Krizi",
+    "story": "Adayı sabah erken saatlerde şiddetli bir deprem vurdu. Bazı baz istasyonları çalışmıyor, sosyal medyada panik ve yağma söylentileri dolaşıyor.\n\n**Görev**: Halkı doğru bilgilendir, yanlış haberleri sınırlarken ifade özgürlüğüne ve şeffaflığa dikkat et.",
+    "advisors": [
+      {
+        "name": "Güvenlik Uzmanı",
+        "text": "Sosyal medyayı yavaşlatalım, yanlış haberleri hızla kaldıralım. ✅ Kaos azalır, yardım koordinasyonu kolaylaşır. ❌ İnsanlar kendini gözetlenmiş hissedebilir."
+      },
+      {
+        "name": "Hukukçu",
+        "text": "Genel yasak yerine, resmi ve acil içeriklere öncelik verelim. ✅ Özgürlükler korunur, meşruiyet güçlenir. ❌ Etki biraz daha yavaş olur."
+      },
+      {
+        "name": "Siyasal Danışman",
+        "text": "Tek bir kriz bilgi ekranı kuralım, söylentileri resmi bilgilerle düzeltelim. ✅ Kamu güveni artar. ❌ Sürekli güncel tutmak emek ister."
+      }
+    ],
+    "action_cards": [
+      {
+        "id": "A",
+        "name": "Sosyal Medyayı Yavaşlat",
+        "tooltip": "Yanlış bilgi yayan hesapları kısıtla, sosyal medyayı geçici olarak yavaşlat.",
+        "cost": 50,
+        "hr_cost": 20,
+        "security_effect": 25,
+        "freedom_cost": 20,
+        "side_effect_risk": 0.5,
+        "speed": "fast"
+      },
+      {
+        "id": "B",
+        "name": "Platformlarla İş Birliği",
+        "tooltip": "Platformlarla anlaş, yanlış bilgiyi işaretle ve resmi içerikleri öne çıkar.",
+        "cost": 30,
+        "hr_cost": 15,
+        "security_effect": 18,
+        "freedom_cost": 10,
+        "side_effect_risk": 0.3,
+        "speed": "medium"
+      },
+      {
+        "id": "C",
+        "name": "Bilgilendirme Kampanyası",
+        "tooltip": "Medya okuryazarlığı ve deprem bilgilendirme içerikleri hazırla ve yay.",
+        "cost": 20,
+        "hr_cost": 10,
+        "security_effect": 10,
+        "freedom_cost": 2,
+        "side_effect_risk": 0.1,
+        "speed": "slow"
+      }
+    ],
+    "immediate_text": "Seçtiğin politika devreye giriyor: {}. İlk saatlerde kriz yönetimi net biçimde değişiyor.",
+    "delayed_text": "Günler sonra şehir toparlanıyor. Söylentiler azalıyor ama bazı vatandaşlar alınan önlemlerin adilliğini tartışıyor."
+  },
+
+  "school_misinformation": {
+    "audience": "kids",
+    "icon": "🏫",
+    "title": "Okulda Yanlış Haber Krizi",
+    "story": "Bir ortaokulda, sosyal medyada yayılan \"okul kapanıyor\" haberi öğrenciler arasında panik yaratıyor. Bazı veliler öfkeli mesajlar atıyor, öğretmenler ders işleyemiyor.\n\n**Görev**: Hem öğrencileri hem velileri sakinleştirecek, yanlış haberi düzeltecek ama çocukların ifade ve bilgi edinme hakkına saygılı bir iletişim planı yap.",
+    "advisors": [
+      {
+        "name": "Okul Müdürü",
+        "text": "Tüm sınıflarda telefonları toplamak ve sosyal medya kullanımını yasaklamak istiyorum. ✅ Panik azalır. ❌ Çocuklar kendilerini cezalandırılmış hissedebilir."
+      },
+      {
+        "name": "Psikolojik Danışman",
+        "text": "Sakinleştirici sınıf sohbetleri yapalım, öğrencilere güvenilir bilgi kaynaklarını anlatalım. ✅ Güven duygusu artar. ❌ Etki biraz daha yavaş olur."
+      },
+      {
+        "name": "Veli Temsilcisi",
+        "text": "Velilere açık ve net bir bilgilendirme mesajı gönderelim, sorularını cevaplayalım. ✅ Şeffaflık sağlanır. ❌ Kısa sürede çok soru gelebilir."
+      }
+    ],
+    "action_cards": [
+      {
+        "id": "A",
+        "name": "Telefon Yasağı",
+        "tooltip": "Okul içinde geçici telefon ve sosyal medya yasağı uygula.",
+        "cost": 10,
+        "hr_cost": 5,
+        "security_effect": 15,
+        "freedom_cost": 18,
+        "side_effect_risk": 0.4,
+        "speed": "fast"
+      },
+      {
+        "id": "B",
+        "name": "Velilere Resmi Mesaj",
+        "tooltip": "Okulun kapanmadığını ve derslerin sürdüğünü açıklayan resmi mesaj gönder.",
+        "cost": 8,
+        "hr_cost": 6,
+        "security_effect": 12,
+        "freedom_cost": 6,
+        "side_effect_risk": 0.2,
+        "speed": "medium"
+      },
+      {
+        "id": "C",
+        "name": "Sınıf Sohbetleri ve Atölye",
+        "tooltip": "Öğrencilerle sınıf içinde kısa sohbetler ve yanlış haberi tanıma atölyeleri yap.",
+        "cost": 12,
+        "hr_cost": 10,
+        "security_effect": 8,
+        "freedom_cost": 3,
+        "side_effect_risk": 0.1,
+        "speed": "slow"
+      }
+    ],
+    "immediate_text": "Seçtiğin politika uygulanıyor: {}. İlk derslerde sınıflardaki hava gözle görülür biçimde değişiyor.",
+    "delayed_text": "Hafta sonunda kriz büyük ölçüde sakinleşiyor. Bazı öğrenciler artık internette gördükleri her şeye hemen inanmıyor, ama kısıtlamalardan rahatsız olanlar da var."
+  }
+}

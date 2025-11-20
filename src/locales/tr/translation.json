@@ -1,0 +1,121 @@
+{
+  "header": {
+    "title_kids": "Kriz Oyunu: Ülkeni Koru",
+    "title_adult": "CIO Kriz Yönetimi Oyunu",
+    "subtitle_kids": "Güvenlik ile özgürlük arasında adil bir denge kur.",
+    "subtitle_adult": "Bilgi düzensizlikleri ve haklar arasında denge kur.",
+    "badge_kids": "Çocuk Modu",
+    "badge_adult": "Tam Sürüm (React)",
+    "restart_button": "Baştan Başla"
+  },
+  "metrics": {
+    "security": "Güvenlik",
+    "freedom": "Özgürlük",
+    "public_trust": "Kamu Güveni",
+    "resilience": "Dayanıklılık",
+    "fatigue": "Uyum Yorgunluğu",
+    "budget": "Bütçe",
+    "hr": "İnsan Kaynağı"
+  },
+  "start_screen": {
+    "profile_select": "Profil seç:",
+    "profile_adult": "Yetişkin",
+    "profile_kids": "Çocuk (10–12)",
+    "welcome_kids": "Hoş Geldin, karar verici!",
+    "welcome_adult": "Hoş Geldin!",
+    "intro_text_kids": "Bu oyunda hayali bir ülkede kriz zamanlarında karar veren ekibin parçasısın. Deprem, yangın, salgın gibi durumlarda insanları korumaya çalışırken, onların konuşma ve gizlilik haklarına da saygı göstermen gerekiyor.",
+    "intro_text_adult": "Bu oyunda bir ada ülkesinin kriz anlarında bilgi ve politika kararlarını veren ekibin parçasısın. Deprem, yangın, salgın ve seçim gibi krizlerde hem güvenliği sağlamak hem de ifade özgürlüğü ve mahremiyeti korumak senin görevin.",
+    "mechanic_text_kids": "Her görevde önce ne olduğunu öğrenecek, sonra danışmanlardan fikir alacak ve sonunda bir karar vereceksin. Seçtiğin karar; güvenlik, özgürlük, insanların devlete güveni ve yorgunluk gibi göstergeleri değiştirecek.",
+    "mechanic_text_adult": "Her kriz kartında danışmanları dinleyecek, aksiyon kartlarından birini seçecek ve kapsam, süre ile güvenceleri ayarlayacaksın. Seçimlerin; güvenlik, özgürlük, kamu güveni, dayanıklılık, uyum yorgunluğu ile bütçe ve insan kaynağını etkileyecek.",
+    "scenarios_title_kids": "Bu oyunda karşılaşacağın görevler",
+    "scenarios_title_adult": "Bu oyunda oynanacak krizler",
+    "btn_tutorial": "🎓 Eğitimle Başla",
+    "btn_start": "⚡ Doğrudan Oyuna Başla"
+  },
+  "common": {
+    "next": "İleri",
+    "skip": "Atla",
+    "apply": "Uygula",
+    "loading": "Yükleniyor...",
+    "mission": "Görev",
+    "mission_yours": "Görevin",
+    "restart": "Baştan Başla"
+  },
+  "phases": {
+    "story_title_kids": "Ne oluyor?",
+    "story_title_adult": "Durum Özeti",
+    "btn_listen": "Danışmanları dinle",
+    "advisors_title_kids": "Danışmanların ne diyor?",
+    "advisors_title_adult": "Danışman Görüşleri",
+    "advisors_btn_kids": "Karar ekranına geç",
+    "advisors_btn_adult": "Karar aşamasına geç",
+    "decision_title_kids": "Karar zamanı",
+    "decision_title_adult": "Karar Paneli",
+    "immediate_title_kids": "Hemen neler oldu?",
+    "immediate_title_adult": "Anında Etkiler",
+    "delayed_title_kids": "Bir süre sonra neler değişti?",
+    "delayed_title_adult": "Gecikmeli Etkiler",
+    "report_title_kids": "Görev özeti",
+    "report_title_adult": "Kriz Sonu Raporu",
+    "end_title_kids": "Oyun özeti",
+    "end_title_adult": "Oyun Sonu",
+    "leadership_score": "Liderlik Skoru"
+  },
+  "panel": {
+    "metrics_title": "Gösterge Paneli",
+    "fatigue_warning": "Uyum yorgunluğu 50'yi geçtiğinde meşruiyet krizi riski artar. Güvenlik kazanımlarını korumak için kamu güveni ve özgürlükleri de gözetmek gerekir."
+  },
+  "tutorial": {
+    "title": "Kısa Eğitim (Deneme Tur)",
+    "desc_kids": "Her turda üç adım var: (1) Neler olduğunu anlatan hikâyeyi okuyorsun, (2) Danışmanların ne dediğini dinliyorsun, (3) Bir karar verip ayarlarını yapıyorsun. Sağdaki panelde ülkenin durumu değişiyor.",
+    "desc_adult": "Oyunda her turda üç şeye bakacaksın: (1) Kriz kartının hikâyesi, (2) Danışmanların önerileri, (3) Aksiyon kartı + kapsam, süre ve güvenceler. Sağdaki panel, krizin ülkenin dengelerini nasıl etkilediğini gösteriyor.",
+    "btn_end": "Eğitimi bitir, oyuna başla"
+  },
+  "decision": {
+    "resources_kids": "Kaynak durumun:",
+    "resources_adult": "Kaynaklar:",
+    "skip_warning_kids": "Bu turda hiç kart oynayacak kadar paran ve ekibin kalmadı. Turu pas geçersen göstergeler kötüleşecek.",
+    "skip_warning_adult": "Hiçbir kartı oynayacak kadar kaynağın kalmadı. Bu turu pas geçersen göstergeler üzerinde ciddi olumsuz etki olacak.",
+    "btn_skip_kids": "Turu atla (riskli)",
+    "btn_skip_adult": "Turu atla (riskli)",
+    "cards_title_kids": "Karar kartları",
+    "cards_title_adult": "Aksiyon Kartları",
+    "settings_title_kids": "Karar ayarların",
+    "settings_title_adult": "Politika Ayarları",
+    "btn_apply_kids": "Kararı uygula",
+    "btn_apply_adult": "Uygula"
+  },
+  "settings_labels": {
+    "scope_kids": "Kimler için?",
+    "scope_adult": "Kapsam",
+    "duration_kids": "Ne kadar süre?",
+    "duration_adult": "Süre",
+    "safeguards_kids": "Güvence ekle",
+    "safeguards_adult": "Güvenceler"
+  },
+  "chips": {
+    "scope_targeted_kids": "Sadece hedef grup",
+    "scope_targeted_adult": "Hedefli",
+    "scope_general_kids": "Herkes",
+    "scope_general_adult": "Genel",
+    "duration_short_kids": "Kısa süre",
+    "duration_short_adult": "Kısa",
+    "duration_medium_kids": "Orta",
+    "duration_medium_adult": "Orta",
+    "duration_long_kids": "Uzun süre",
+    "duration_long_adult": "Uzun",
+    "safeguard_transparency_kids": "Açıkça anlat",
+    "safeguard_transparency_adult": "Şeffaflık raporu",
+    "safeguard_appeal_kids": "İtiraz hakkı",
+    "safeguard_appeal_adult": "İtiraz mekanizması",
+    "safeguard_sunset_kids": "Otomatik bitiş",
+    "safeguard_sunset_adult": "Otomatik sona erdirme"
+  },
+  "feedback": {
+    "counter_factual_A_kids": "Başka bir seçim daha az masraflı olabilirdi.",
+    "counter_factual_A_adult": "Alternatif: B veya C ile benzer güvenlik daha düşük maliyetle sağlanabilirdi.",
+    "counter_factual_other_kids": "Bu dengeli bir seçimdi.",
+    "counter_factual_other_adult": "Bu seçim görece orantılı; kullandığınız güvenceler fark yarattı.",
+    "skip_reason": "Kaynak yetersizliği nedeniyle müdahale edilemedi."
+  }
+}
