@@ -19,8 +19,6 @@ import parentScenariosTr from "../data/scenarios_parent_tr.json";
 import parentScenariosEn from "../data/scenarios_parent_en.json";
 import childScenariosTr from "../data/scenarios_child_tr.json";
 import childScenariosEn from "../data/scenarios_child_en.json";
-import parentScenariosFi from "../data/scenarios_parent_fi.json";
-import childScenariosFi from "../data/scenarios_child_fi.json";
 
 const initialSettings = config.initial_settings;
 const balance = config.game_balance;
@@ -60,13 +58,9 @@ export default function FullGame() {
   const scenariosData = useMemo(() => {
     const lang = i18n.language;
     if (isKids) {
-      if (lang === "en") return childScenariosEn;
-      if (lang === "fi") return childScenariosFi;
-      return childScenariosTr;
+      return lang === "en" ? childScenariosEn : childScenariosTr;
     } else {
-      if (lang === "en") return parentScenariosEn;
-      if (lang === "fi") return parentScenariosFi;
-      return parentScenariosTr;
+      return lang === "en" ? parentScenariosEn : parentScenariosTr;
     }
   }, [isKids, i18n.language]);
 
@@ -87,6 +81,7 @@ export default function FullGame() {
   const [decision, setDecision] = useState({});
   const [results, setResults] = useState(null);
   const [metricsBefore, setMetricsBefore] = useState(cloneMetrics);
+  const [selectedIds, setSelectedIds] = useState(new Set(allScenarioIds));
 
   const leftColRef = useRef(null);
   const topRef = useRef(null); 
@@ -94,8 +89,7 @@ export default function FullGame() {
   const currentScenario =
     selectedScenarioId != null ? scenariosData[selectedScenarioId] : null;
 
-  // GÜNCELLEME: Maksimum kriz sayısı 3'e düşürüldü
-  const maxCrises = 3;
+  const maxCrises = 4;
 
   // Stilleri Dinamik Al (Mobil ve Dark Mode'a göre)
   const currentStyles = useMemo(() => getStyles(isMobile, isDark), [isMobile, isDark]);
@@ -119,7 +113,8 @@ export default function FullGame() {
     setHistory([cloneMetrics()]);
     setDecision({});
     setResults(null);
-    // Seçili ID state'i kaldırıldı çünkü artık random
+    const freshIds = new Set(Object.keys(scenariosData));
+    setSelectedIds(freshIds);
   };
 
   useEffect(() => {
@@ -135,10 +130,9 @@ export default function FullGame() {
   }, [screen, isMobile]);
 
   const startGame = (withTutorial = false) => {
-    // GÜNCELLEME: Manuel seçim yerine tüm havuzdan rastgele 3 tane seç
-    const pool = [...allScenarioIds];
-    const seq = shuffle(pool).slice(0, maxCrises);
-    
+    const ids =
+      selectedIds.size > 0 ? Array.from(selectedIds) : [...allScenarioIds];
+    const seq = shuffle(ids).slice(0, maxCrises);
     if (!seq.length) return;
 
     setCrisisSequence(seq);
@@ -149,6 +143,7 @@ export default function FullGame() {
   };
 
   const calculateEffects = (action, scope, duration, safeguards) => {
+    // ... (Hesaplama mantığı aynı) ...
     const THREAT_SEVERITY = balance.THREAT_SEVERITY;
     const RANDOM_FACTOR_RANGE = balance.RANDOM_FACTOR_RANGE;
     const SCOPE_MULTIPLIERS = balance.SCOPE_MULTIPLIERS;
@@ -242,14 +237,17 @@ export default function FullGame() {
       <div style={currentStyles.wrapper}>
         <div style={currentStyles.gameContainer}>
            <HeaderSimple isKids={isKids} onRestart={resetGame} styles={currentStyles} isDark={isDark} setIsDark={setIsDark} />
-           <div style={{ padding: isMobile ? 15 : 20, overflowY: 'auto', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-             {/* GÜNCELLEME: StartScreen props sadeleştirildi */}
+           <div style={{ padding: isMobile ? 15 : 20, overflowY: 'auto', height: '100%' }}>
              <StartScreen
+               allScenarioIds={allScenarioIds}
+               selectedIds={selectedIds}
+               setSelectedIds={setSelectedIds}
                onStart={() => startGame(false)}
                onStartTutorial={() => startGame(true)}
                mode={mode}
                setMode={setMode}
                isKids={isKids}
+               scenariosData={scenariosData}
                styles={currentStyles}
              />
            </div>
@@ -419,13 +417,7 @@ export default function FullGame() {
 function HeaderSimple({ isKids = false, onRestart, styles, isDark, setIsDark }) {
   const { t, i18n } = useTranslation();
   const toggleLang = () => {
-    const currentParam = i18n.language; 
-    let nextLang = 'tr';
-    if (currentParam === 'tr') nextLang = 'en';
-    else if (currentParam === 'en') nextLang = 'fi';
-    else if (currentParam === 'fi') nextLang = 'tr';
-    
-    i18n.changeLanguage(nextLang);
+    i18n.changeLanguage(i18n.language === 'tr' ? 'en' : 'tr');
   };
   return (
     <div style={styles.header}>
@@ -441,7 +433,7 @@ function HeaderSimple({ isKids = false, onRestart, styles, isDark, setIsDark }) 
         <button onClick={() => setIsDark(!isDark)} style={styles.langButton}>
             {isDark ? '☀️' : '🌙'}
         </button>
-        <button onClick={toggleLang} style={styles.langButton}>{i18n.language.toUpperCase()}</button>
+        <button onClick={toggleLang} style={styles.langButton}>{i18n.language === 'tr' ? 'EN' : 'TR'}</button>
         {onRestart && (
           <button type="button" onClick={onRestart} style={styles.headerRestartButton}>
             {t('header.restart_button')}
@@ -455,13 +447,7 @@ function HeaderSimple({ isKids = false, onRestart, styles, isDark, setIsDark }) 
 function HeaderWithStatus({ scenario, index, total, isKids = false, onRestart, styles, isDark, setIsDark }) {
   const { t, i18n } = useTranslation();
   const toggleLang = () => {
-    const currentParam = i18n.language;
-    let nextLang = 'tr';
-    if (currentParam === 'tr') nextLang = 'en';
-    else if (currentParam === 'en') nextLang = 'fi';
-    else if (currentParam === 'fi') nextLang = 'tr';
-
-    i18n.changeLanguage(nextLang);
+    i18n.changeLanguage(i18n.language === 'tr' ? 'en' : 'tr');
   };
   return (
     <div style={styles.header}>
@@ -479,7 +465,7 @@ function HeaderWithStatus({ scenario, index, total, isKids = false, onRestart, s
         <button onClick={() => setIsDark(!isDark)} style={styles.langButton}>
             {isDark ? '☀️' : '🌙'}
         </button>
-        <button onClick={toggleLang} style={styles.langButton}>{i18n.language.toUpperCase()}</button>
+        <button onClick={toggleLang} style={styles.langButton}>{i18n.language === 'tr' ? 'EN' : 'TR'}</button>
         <div style={styles.headerBadge}>{t(isKids ? 'header.badge_kids' : 'header.badge_adult')}</div>
         {onRestart && (
           <button type="button" onClick={onRestart} style={styles.headerRestartButton}>
@@ -491,47 +477,49 @@ function HeaderWithStatus({ scenario, index, total, isKids = false, onRestart, s
   );
 }
 
-// GÜNCELLEME: StartScreen sadeleştirildi
-function StartScreen({ onStart, onStartTutorial, mode, setMode, isKids, styles }) {
+function StartScreen({ allScenarioIds, selectedIds, setSelectedIds, onStart, onStartTutorial, mode, setMode, isKids, scenariosData, styles }) {
   const { t } = useTranslation();
-
+  const toggleId = (id) => {
+    const next = new Set(selectedIds);
+    if (next.has(id)) next.delete(id); else next.add(id);
+    setSelectedIds(next);
+  };
   return (
-    <div style={{display: 'flex', flexDirection: 'column', gap: 24, padding: '0 20px'}}>
+    <div style={{display: 'flex', flexDirection: 'column', gap: 16}}>
       <div>
-        <h2 style={{...styles.phaseTitle, fontSize: 24, marginBottom: 8, color: styles.accentColor}}>
-            {t(isKids ? 'start_screen.welcome_kids' : 'start_screen.welcome_adult')}
-        </h2>
-        <p style={styles.storyText}>
-            {t(isKids ? 'start_screen.intro_text_kids' : 'start_screen.intro_text_adult')}
-        </p>
+        <h2 style={{...styles.phaseTitle, fontSize: 24, marginBottom: 4, color: styles.accentColor}}>{t(isKids ? 'start_screen.welcome_kids' : 'start_screen.welcome_adult')}</h2>
+        <p style={styles.storyText}>{t(isKids ? 'start_screen.intro_text_kids' : 'start_screen.intro_text_adult')}</p>
       </div>
 
-      <div style={{ 
-          display: "flex", 
-          alignItems: "center", 
-          gap: 12, 
-          padding: '20px 0', 
-          borderTop: styles.border, 
-          borderBottom: styles.border 
-      }}>
-        <span style={{ fontSize: 14, color: styles.subTextColor, fontWeight: '600' }}>
-            {t('start_screen.profile_select')}
-        </span>
-        <Chip 
-            label={t('start_screen.profile_adult')} 
-            active={mode === "adult"} 
-            onClick={() => setMode("adult")} 
-            styles={styles}
-        />
-        <Chip 
-            label={t('start_screen.profile_kids')} 
-            active={mode === "kids"} 
-            onClick={() => setMode("kids")} 
-            styles={styles}
-        />
+      <div style={{ display: "flex", alignItems: "center", gap: 10, padding: '10px 0', borderTop: styles.border, borderBottom: styles.border }}>
+        <span style={{ fontSize: 13, color: styles.subTextColor, fontWeight: '600' }}>{t('start_screen.profile_select')}</span>
+        <Chip label={t('start_screen.profile_adult')} active={mode === "adult"} onClick={() => setMode("adult")} styles={styles}/>
+        <Chip label={t('start_screen.profile_kids')} active={mode === "kids"} onClick={() => setMode("kids")} styles={styles}/>
       </div>
 
-      <div style={{ ...styles.actionsRow, gap: 16, justifyContent: 'flex-start', flexWrap: 'wrap', marginTop: 10 }}>
+      <div>
+        <h3 style={{...styles.sideTitle, fontSize: 15}}>{t(isKids ? 'start_screen.scenarios_title_kids' : 'start_screen.scenarios_title_adult')}</h3>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+          {allScenarioIds.map((id) => (
+            <label key={id} style={{ 
+                borderRadius: 8, 
+                border: selectedIds.has(id) ? `1px solid ${styles.accentColor}` : styles.border, 
+                padding: "8px 12px", 
+                fontSize: 13, 
+                cursor: "pointer", 
+                background: selectedIds.has(id) ? styles.selectedBg : styles.cardBg,
+                color: selectedIds.has(id) ? styles.accentColor : styles.subTextColor,
+                transition: "all 0.2s",
+                display: 'flex', alignItems: 'center', gap: 6
+            }}>
+              <input type="checkbox" checked={selectedIds.has(id)} onChange={() => toggleId(id)} style={{ marginRight: 0 }} />
+              <span>{scenariosData[id].icon} {scenariosData[id].title}</span>
+            </label>
+          ))}
+        </div>
+      </div>
+
+      <div style={{ ...styles.actionsRow, gap: 12, justifyContent: 'flex-start', flexWrap: 'wrap', marginTop: 10 }}>
         <button style={styles.primaryButton} onClick={onStartTutorial}>
            🎓 {t('start_screen.btn_tutorial')}
         </button>
@@ -539,10 +527,8 @@ function StartScreen({ onStart, onStartTutorial, mode, setMode, isKids, styles }
           style={{ 
             ...styles.primaryButton, 
             background: "linear-gradient(to right, #3b82f6, #2563eb)",
-            boxShadow: "0 0 20px rgba(59, 130, 246, 0.5)",
-            color: "white",
-            padding: "12px 32px",
-            fontSize: 16
+            boxShadow: "0 0 15px rgba(59, 130, 246, 0.4)",
+            color: "white" 
           }} 
           onClick={onStart}
         >

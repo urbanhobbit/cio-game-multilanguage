@@ -1,0 +1,125 @@
+{
+    "header": {
+        "title_kids": "Kriisipeli: Suojele Maatasi",
+        "title_adult": "CIO Kriisinhallintapeli",
+        "subtitle_kids": "Tasapainota turvallisuus ja vapaus.",
+        "subtitle_adult": "Tasapainota informaatiohäiriöt ja oikeudet.",
+        "badge_kids": "Lapset",
+        "badge_adult": "Koko Versio (React)",
+        "restart_button": "Aloita Alusta"
+    },
+    "metrics": {
+        "security": "Turvallisuus",
+        "freedom": "Vapaus",
+        "public_trust": "Luottamus",
+        "resilience": "Joustavuus",
+        "fatigue": "Noudattamisväsymys",
+        "budget": "Budjetti",
+        "hr": "Henkilöstö"
+    },
+    "start_screen": {
+        "profile_select": "Valitse Profiili:",
+        "profile_adult": "Aikuinen",
+        "profile_kids": "Lapsi (15+)",
+        "welcome_kids": "Tervetuloa, päättäjä!",
+        "welcome_adult": "Tervetuloa!",
+        "intro_text_kids": "Tässä pelissä olet osa tiimiä, joka tekee päätöksiä kuvitteelliselle maalle kriisien aikana. Kun yrität suojella ihmisiä maanjäristysten, tulipalojen tai epidemioiden aikana, sinun on myös kunnioitettava heidän sananvapauttaan ja yksityisyyttään.",
+        "intro_text_adult": "Tässä pelissä olet osa tiimiä, joka tekee tieto- ja politiikkapäätöksiä saarivaltiolle kriisien aikana. Tehtäväsi on varmistaa turvallisuus samalla kun suojelet sananvapautta ja yksityisyyttä kriisien, kuten maanjäristysten, maastopalojen, epidemioiden ja vaalien aikana.",
+        "mechanic_text_kids": "Jokaisessa tehtävässä opit ensin mitä tapahtui, kuuntelet sitten neuvonantajia ja lopulta teet päätöksen. Valintasi muuttaa mittareita, kuten turvallisuutta, vapautta, luottamusta ja väsymystä.",
+        "mechanic_text_adult": "Jokaisessa kriisikortissa kuuntelet neuvonantajia, valitset toimintakortin ja säädät laajuutta, kestoa ja suojatoimia. Valintasi vaikuttavat turvallisuuteen, vapauteen, luottamukseen, joustavuuteen, noudattamisväsymykseen, budjettiin ja henkilöstöresursseihin.",
+        "scenarios_title_kids": "Tehtävät, jotka kohtaat",
+        "scenarios_title_adult": "Pelattavat kriisit",
+        "btn_tutorial": "🎓 Aloita Opetusohjelmalla",
+        "btn_start": "⚡ Aloita Peli Suoraan"
+    },
+    "common": {
+        "next": "Seuraava",
+        "skip": "Ohita",
+        "apply": "Käytä",
+        "loading": "Ladataan...",
+        "mission": "Tehtävä",
+        "mission_yours": "Sinun Tehtäväsi",
+        "restart": "Aloita Peli Alusta",
+        "before": "Ennen",
+        "after": "Jälkeen"
+    },
+    "phases": {
+        "story_title_kids": "Mitä tapahtuu?",
+        "story_title_adult": "Tilannekatsaus",
+        "btn_listen": "Kuuntele Neuvonantajia",
+        "advisors_title_kids": "Mitä neuvonantajat sanovat?",
+        "advisors_title_adult": "Neuvonantajien Mielipiteet",
+        "advisors_btn_kids": "Siirry päätösruutuun",
+        "advisors_btn_adult": "Siirry päätösvaiheeseen",
+        "decision_title_kids": "Aika päättää",
+        "decision_title_adult": "Päätöspaneeli",
+        "immediate_title_kids": "Mitä tapahtui välittömästi?",
+        "immediate_title_adult": "Välittömät Vaikutukset",
+        "delayed_title_kids": "Mitä muuttui hetken kuluttua?",
+        "delayed_title_adult": "Viivästyneet Vaikutukset",
+        "report_title_kids": "Tehtävän yhteenveto",
+        "report_title_adult": "Kriisiraportti",
+        "end_title_kids": "Pelin yhteenveto",
+        "end_title_adult": "Peli Ohi",
+        "leadership_score": "Johtajuuspisteet"
+    },
+    "panel": {
+        "metrics_title": "Mittaripaneeli",
+        "fatigue_warning": "Kun noudattamisväsymys ylittää 50, legitimiteettikriisin riski kasvaa. Luottamus ja vapaus on tasapainotettava.",
+        "news_title": "Uutissyöte",
+        "no_news": "Ei uutisia vielä..."
+    },
+    "tutorial": {
+        "title": "Lyhyt Opetusohjelma (Kokeilukierros)",
+        "desc_kids": "Jokaisella kierroksella on kolme vaihetta: (1) Lue tarina tapahtumista, (2) Kuuntele neuvonantajia, (3) Tee päätös ja säädä asetuksia. Oikeanpuoleinen paneeli näyttää, miten maan tila muuttuu.",
+        "desc_adult": "Pelissä tarkastelet kolmea asiaa joka kierroksella: (1) Kriisikortin tarina, (2) Neuvonantajien ehdotukset, (3) Toimintakortti + laajuus, kesto ja suojatoimet. Oikea paneeli näyttää, miten kriisi vaikuttaa maan mittareihin.",
+        "btn_end": "Lopeta opetusohjelma, aloita peli"
+    },
+    "decision": {
+        "resources_kids": "Sinun resurssisi:",
+        "resources_adult": "Resurssit:",
+        "skip_warning_kids": "Sinulla ei ole tarpeeksi rahaa tai tiimivoimaa pelataksesi mitään kortteja tällä kierroksella. Jos ohitat, mittarit huononevat.",
+        "skip_warning_adult": "Sinulla ei ole tarpeeksi resursseja pelata mitään korttia. Tämän kierroksen ohittamisella on vakava negatiivinen vaikutus mittareihin.",
+        "btn_skip_kids": "Ohita vuoro (riskialtis)",
+        "btn_skip_adult": "Ohita vuoro (riskialtis)",
+        "cards_title_kids": "Päätöskortit",
+        "cards_title_adult": "Toimintakortit",
+        "settings_title_kids": "Päätösasetukset",
+        "settings_title_adult": "Käytäntöasetukset",
+        "btn_apply_kids": "Toteuta päätös",
+        "btn_apply_adult": "Käytä"
+    },
+    "settings_labels": {
+        "scope_kids": "Kenelle?",
+        "scope_adult": "LAAJUUS",
+        "duration_kids": "Kuinka kauan?",
+        "duration_adult": "KESTO",
+        "safeguards_kids": "Lisää suojatoimia",
+        "safeguards_adult": "SUOJATOIMET"
+    },
+    "chips": {
+        "scope_targeted_kids": "Vain kohderyhmä",
+        "scope_targeted_adult": "Kohdennettu",
+        "scope_general_kids": "Kaikki",
+        "scope_general_adult": "Yleinen",
+        "duration_short_kids": "Lyhyt aika",
+        "duration_short_adult": "Lyhyt",
+        "duration_medium_kids": "Keskitaso",
+        "duration_medium_adult": "Keskitaso",
+        "duration_long_kids": "Pitkä aika",
+        "duration_long_adult": "Pitkä",
+        "safeguard_transparency_kids": "Selitä selkeästi",
+        "safeguard_transparency_adult": "Avoimuusraportti",
+        "safeguard_appeal_kids": "Oikeus valittaa",
+        "safeguard_appeal_adult": "Valitusmekanismi",
+        "safeguard_sunset_kids": "Auto-lopetus",
+        "safeguard_sunset_adult": "Auringonlaskulauseke"
+    },
+    "feedback": {
+        "counter_factual_A_kids": "Toinen valinta olisi voinut olla halvempi.",
+        "counter_factual_A_adult": "Vaihtoehto: Samankaltainen turvallisuus olisi voitu saavuttaa halvemmalla käyttämällä B:tä tai C:tä.",
+        "counter_factual_other_kids": "Tämä oli tasapainoinen valinta.",
+        "counter_factual_other_adult": "Tämä valinta oli suhteellisen oikeasuhtainen; suojatoimesi vaikuttivat.",
+        "skip_reason": "Väliintulo epäonnistui resurssien puutteen vuoksi."
+    }
+}

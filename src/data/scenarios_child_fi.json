@@ -1,0 +1,254 @@
+{
+    "earthquake": {
+        "title": "Maanjäristys",
+        "icon": "🏚️",
+        "story": "Maanjäristys tapahtui. Internet on sekaisin, väärä tieto leviää. **Tehtävä**: Levitä totuutta ja pysy turvassa.",
+        "advisors": [
+            {
+                "name": "Turvallisuusasiantuntija",
+                "text": "Hidasta sosiaalista mediaa paniikin pysäyttämiseksi."
+            },
+            {
+                "name": "Oikeudellinen Neuvonantaja",
+                "text": "Tee aputiedosta näkyvää estämisen sijaan."
+            },
+            {
+                "name": "Poliittinen Neuvonantaja",
+                "text": "Jaa rauhoittavia viestejä."
+            },
+            {
+                "name": "Tekninen Asiantuntija",
+                "text": "Lähetä massatekstiviestejä apupisteistä."
+            }
+        ],
+        "action_cards": [
+            {
+                "id": "A",
+                "name": "Hidasta Sosiaalista Mediaa",
+                "cost": 30,
+                "hr_cost": 10,
+                "speed": "fast",
+                "security_effect": 35,
+                "freedom_cost": 20,
+                "side_effect_risk": 0.3,
+                "safeguard_reduction": 0.5,
+                "tooltip": "Vähentää valeuutisia mutta laskee vapauden tunnetta."
+            },
+            {
+                "id": "B",
+                "name": "Alusta Harmonia",
+                "cost": 20,
+                "hr_cost": 8,
+                "speed": "medium",
+                "security_effect": 22,
+                "freedom_cost": 10,
+                "side_effect_risk": 0.18,
+                "safeguard_reduction": 0.6,
+                "tooltip": "Korosta tosi tietoa ja merkitse valeuutiset."
+            },
+            {
+                "id": "C",
+                "name": "Informatiiviset Viestit",
+                "cost": 10,
+                "hr_cost": 6,
+                "speed": "slow",
+                "security_effect": 12,
+                "freedom_cost": 3,
+                "side_effect_risk": 0.08,
+                "safeguard_reduction": 0.8,
+                "tooltip": "Rauhoittavien ja opettavaisten viestien jakaminen."
+            }
+        ],
+        "immediate_text": "Valintasi on aktiivinen: {}. Ihmiset ovat rauhallisempia.",
+        "delayed_text": "Valeuutiset vähenivät."
+    },
+    "forest_fire": {
+        "title": "Metsäpalo",
+        "icon": "🔥",
+        "story": "Metsäpalo syttyi. Väärää evakuointitietoa jaettu. **Tehtävä**: Varmista turvallisuus.",
+        "advisors": [
+            {
+                "name": "Turvallisuusasiantuntija",
+                "text": "Rajoita vääriä reittejä jakavia tilejä."
+            },
+            {
+                "name": "Oikeudellinen Asiantuntija",
+                "text": "Näytä viralliset reitit selkeästi."
+            },
+            {
+                "name": "Opettaja",
+                "text": "Tee turvallisuusvideoita."
+            },
+            {
+                "name": "Tekninen Asiantuntija",
+                "text": "Lähetä puhelinhälytyksiä."
+            }
+        ],
+        "action_cards": [
+            {
+                "id": "A",
+                "name": "Estä Väärä Tieto",
+                "cost": 25,
+                "hr_cost": 10,
+                "speed": "fast",
+                "security_effect": 30,
+                "freedom_cost": 15,
+                "side_effect_risk": 0.25,
+                "safeguard_reduction": 0.5,
+                "tooltip": "Pysäyttää väärän tiedon nopeasti mutta vähentää vapautta."
+            },
+            {
+                "id": "B",
+                "name": "Varoitusviestit",
+                "cost": 20,
+                "hr_cost": 8,
+                "speed": "medium",
+                "security_effect": 24,
+                "freedom_cost": 8,
+                "side_effect_risk": 0.12,
+                "safeguard_reduction": 0.6,
+                "tooltip": "Oikeat reitit lähetetty puhelimiin."
+            },
+            {
+                "id": "C",
+                "name": "Kouluyhteistyö",
+                "cost": 10,
+                "hr_cost": 5,
+                "speed": "slow",
+                "security_effect": 10,
+                "freedom_cost": 3,
+                "side_effect_risk": 0.05,
+                "safeguard_reduction": 0.8,
+                "tooltip": "Tietosisältöä nuorille."
+            }
+        ],
+        "immediate_text": "Valintasi on aktiivinen: {}. Evakuoinnit nopeutuivat.",
+        "delayed_text": "Palo hallinnassa."
+    },
+    "pandemic": {
+        "title": "Pandemia",
+        "icon": "🏥",
+        "story": "Virus leviää. Vääriä parannuskeinoja liikkeellä. **Tehtävä**: Jaa luotettavaa tietoa.",
+        "advisors": [
+            {
+                "name": "Terveysasiantuntija",
+                "text": "Hälytysjärjestelmä riskialueille."
+            },
+            {
+                "name": "Tekninen Asiantuntija",
+                "text": "Merkitse väärä tieto."
+            },
+            {
+                "name": "Lakiasiantuntija",
+                "text": "Selitä rajoitukset selkeästi."
+            },
+            {
+                "name": "Opettaja",
+                "text": "Valmistele lyhyitä tietovideoita."
+            }
+        ],
+        "action_cards": [
+            {
+                "id": "A",
+                "name": "Riskikartta",
+                "cost": 35,
+                "hr_cost": 12,
+                "speed": "fast",
+                "security_effect": 30,
+                "freedom_cost": 18,
+                "side_effect_risk": 0.22,
+                "safeguard_reduction": 0.55,
+                "tooltip": "Riskialueet ilmoitettu, jotkut voivat pitää sitä rajoittavana."
+            },
+            {
+                "id": "B",
+                "name": "Paikallinen Tieto",
+                "cost": 20,
+                "hr_cost": 10,
+                "speed": "medium",
+                "security_effect": 20,
+                "freedom_cost": 8,
+                "side_effect_risk": 0.15,
+                "safeguard_reduction": 0.6,
+                "tooltip": "Perusta naapuruston tietoverkosto."
+            },
+            {
+                "id": "C",
+                "name": "Lyhyet Tietovideot",
+                "cost": 10,
+                "hr_cost": 5,
+                "speed": "slow",
+                "security_effect": 12,
+                "freedom_cost": 3,
+                "side_effect_risk": 0.05,
+                "safeguard_reduction": 0.8,
+                "tooltip": "Kerrotaan oikeaa tietoa pandemiasta."
+            }
+        ],
+        "immediate_text": "Valintasi on aktiivinen: {}. Tiedonkulku nopeutui.",
+        "delayed_text": "Väärä tieto väheni."
+    },
+    "election": {
+        "title": "Vaalit",
+        "icon": "🗳️",
+        "story": "Fake-videoita liikkeellä. **Tehtävä**: Suojele totuutta.",
+        "advisors": [
+            {
+                "name": "Viestintäasiantuntija",
+                "text": "Lisää varoitustunnisteita."
+            },
+            {
+                "name": "Opettaja",
+                "text": "Opeta tunnistamaan totuus."
+            },
+            {
+                "name": "Kyberasiantuntija",
+                "text": "Selitä miten se toimii vapaaehtoisryhmien kautta"
+            },
+            {
+                "name": "Oikeudellinen Asiantuntija",
+                "text": "Avoimet päätökset."
+            }
+        ],
+        "action_cards": [
+            {
+                "id": "A",
+                "name": "Fake-sisällön Varoitus",
+                "cost": 25,
+                "hr_cost": 10,
+                "speed": "fast",
+                "security_effect": 28,
+                "freedom_cost": 10,
+                "side_effect_risk": 0.2,
+                "safeguard_reduction": 0.55,
+                "tooltip": "Tunnisteiden lisääminen fake-videoihin."
+            },
+            {
+                "id": "B",
+                "name": "Jaa Totuus",
+                "cost": 20,
+                "hr_cost": 8,
+                "speed": "medium",
+                "security_effect": 18,
+                "freedom_cost": 5,
+                "side_effect_risk": 0.12,
+                "safeguard_reduction": 0.65,
+                "tooltip": "Oikeiden puheiden levittäminen."
+            },
+            {
+                "id": "C",
+                "name": "Medialukutaito",
+                "cost": 10,
+                "hr_cost": 5,
+                "speed": "slow",
+                "security_effect": 10,
+                "freedom_cost": 2,
+                "side_effect_risk": 0.05,
+                "safeguard_reduction": 0.85,
+                "tooltip": "Opeta tunnistamaan fake-sisältö."
+            }
+        ],
+        "immediate_text": "Valintasi on aktiivinen: {}. Fake-videot pysähtyivät.",
+        "delayed_text": "Nuorten luottamus kasvaa."
+    }
+}

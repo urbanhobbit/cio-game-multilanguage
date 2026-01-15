@@ -3,6 +3,7 @@ import { initReactI18next } from "react-i18next";
 
 import trTranslation from './locales/tr/translation.json';
 import enTranslation from './locales/en/translation.json';
+import fiTranslation from './locales/fi/translation.json';
 
 // Dil kaynaklarını tanımlıyoruz
 const resources = {
@@ -11,6 +12,9 @@ const resources = {
   },
   en: {
     translation: enTranslation
+  },
+  fi: {
+    translation: fiTranslation
   }
 };
 

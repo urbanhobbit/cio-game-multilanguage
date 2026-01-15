@@ -1,0 +1,266 @@
+{
+    "earthquake": {
+        "title": "Maanjäristys",
+        "icon": "🏚️",
+        "story": "7.2 magnitudin maanjäristys iski saarelle. Matkapuhelinmastot ovat alhaalla, huhut leviävät. Yleisö on peloissaan. **Tehtävä**: Palauta viestintäverkot, hallitse väärää tietoa ja tasapainota turvallisuus vapauden kanssa.",
+        "advisors": [
+            {
+                "name": "Turvallisuusasiantuntija",
+                "text": "Sosiaalinen media luo paniikkia. Hidasta sitä ja poista väärä tieto! ✅ Kaaos vähenee ❌ Jotkut voivat tuntea olevansa tarkkailun alla"
+            },
+            {
+                "name": "Oikeudellinen Neuvonantaja",
+                "text": "Priorisoi vain hätäinternetliikenne. Lähetä apupisteet kaikkialle. ✅ Turvallinen ja rauhallinen yleisö ❌ Hitaampi prosessi"
+            },
+            {
+                "name": "Poliittinen Neuvonantaja",
+                "text": "Avaa 'tietoruutu'. Jaa apupaikat. Korjaa väärä tieto. ✅ Luottamus kasvaa ❌ Järjestely vie aikaa"
+            },
+            {
+                "name": "IT-Spesialisti",
+                "text": "Lähetä massatekstiviestejä, tavoita yleisö hätäalustojen kautta. ✅ Koordinaatio lisääntyy ❌ Tekniset ongelmat mahdollisia"
+            }
+        ],
+        "action_cards": [
+            {
+                "id": "A",
+                "name": "Tehokas Somen Väliintulo",
+                "cost": 50,
+                "hr_cost": 20,
+                "speed": "fast",
+                "security_effect": 40,
+                "freedom_cost": 30,
+                "side_effect_risk": 0.45,
+                "safeguard_reduction": 0.5,
+                "tooltip": "Hidasta sosiaalista mediaa, sovelta laajaa valvontaa. Poista väärä tieto nopeasti.\nPlussat (+): Kaaos vähenee nopeasti, koordinaatio lisääntyy\nMiinukset (−): Vapauden tunne vähenee"
+            },
+            {
+                "id": "B",
+                "name": "Yhteistyö Alustojen Kanssa",
+                "cost": 30,
+                "hr_cost": 15,
+                "speed": "medium",
+                "security_effect": 28,
+                "freedom_cost": 15,
+                "side_effect_risk": 0.25,
+                "safeguard_reduction": 0.6,
+                "tooltip": "Seuraa väärän tiedon leviämistä, tee yhteistyötä alustojen kanssa.\nPlussat (+): Yleisö tuntee olonsa turvalliseksi, vapaus ei kärsi pahasti\nMiinukset (−): Vaikutus on hieman hidas"
+            },
+            {
+                "id": "C",
+                "name": "Tietoisuuskampanja",
+                "cost": 20,
+                "hr_cost": 10,
+                "speed": "slow",
+                "security_effect": 16,
+                "freedom_cost": 5,
+                "side_effect_risk": 0.1,
+                "safeguard_reduction": 0.8,
+                "tooltip": "Kouluta yleisöä maanjäristyksistä ja medialukutaidosta.\nPlussat (+): Pitkän aikavälin tietoinen yleisö, vapausystävällinen\nMiinukset (−): Hidas vaikutus, ei välittömiä tuloksia"
+            }
+        ],
+        "immediate_text": "Valintasi on aktiivinen: {}. Etsintä- ja pelastuskoordinaatio parani 30%. Joillakin ihmisillä on edelleen ongelmia internetyhteyden kanssa.",
+        "delayed_text": "Ryöstelyhuhut vähenivät 60%; avun jakelu järjestetty. Jotkut kansalaiset ovat epämukavia valvonnan suhteen."
+    },
+    "forest_fire": {
+        "title": "Metsäpalo",
+        "icon": "🔥",
+        "story": "Suuri metsäpalo syttyi saaren eteläosassa. Vääriä evakuointikarttoja kiertää sosiaalisessa mediassa. **Tehtävä**: Varmista turvallisuus ja toimita oikeaa tietoa samalla kun suojelet vapauksia CIO:na.",
+        "advisors": [
+            {
+                "name": "Turvallisuusasiantuntija",
+                "text": "Rajoita sosiaalista mediaa alueella, sulje tilit jotka jakavat vääriä karttoja. ✅ Nopea, pelastaa ihmishenkiä ❌ Vapaus vähenee"
+            },
+            {
+                "name": "Oikeudellinen Asiantuntija",
+                "text": "Kohdennettu ja avoin viestintä on parempi kuin rajoittaminen. ✅ Lisää luottamusta pitkällä aikavälillä ❌ Hitaampi"
+            },
+            {
+                "name": "Akateemikko",
+                "text": "Aloita medialukutaitokampanja. ✅ Lisää luottamusta ❌ Heikko vaikutus kriisin aikana"
+            },
+            {
+                "name": "IT-Spesialisti",
+                "text": "Lähetä suoria hälytyksiä puhelimiin (solulähetys). ✅ Nopea ❌ Koordinaatio on vaikeaa"
+            }
+        ],
+        "action_cards": [
+            {
+                "id": "A",
+                "name": "Aktiivinen Info-väliintulo",
+                "cost": 40,
+                "hr_cost": 15,
+                "speed": "fast",
+                "security_effect": 35,
+                "freedom_cost": 25,
+                "side_effect_risk": 0.4,
+                "safeguard_reduction": 0.5,
+                "tooltip": "Käytä vastatrollitiimejä kumoamaan vääriä karttoja.\nPlussat (+): Väärä tieto vähenee nopeasti.\nMiinukset (−): Vapaus tuntuu alhaisemmal."
+            },
+            {
+                "id": "B",
+                "name": "Käytä Teknologiaa",
+                "cost": 30,
+                "hr_cost": 15,
+                "speed": "medium",
+                "security_effect": 30,
+                "freedom_cost": 14,
+                "side_effect_risk": 0.25,
+                "safeguard_reduction": 0.6,
+                "tooltip": "Lähetä puhelinhälytyksiä, tee yhteistyötä alustojen kanssa.\nPlussat (+): Nopea tieto, vapaus turvassa.\nMiinukset (−): Tekninen koordinaatio tarpeen."
+            },
+            {
+                "id": "C",
+                "name": "Media & NGO Yhteistyö",
+                "cost": 20,
+                "hr_cost": 10,
+                "speed": "slow",
+                "security_effect": 14,
+                "freedom_cost": 4,
+                "side_effect_risk": 0.08,
+                "safeguard_reduction": 0.8,
+                "tooltip": "Jaa riippumattomia uutisia, aloita lukutaitokampanja.\nPlussat (+): Korkea luottamus, vapausystävällinen.\nMiinukset (−): Hidas."
+            }
+        ],
+        "immediate_text": "Ratkaisusi on käytössä: {}. Evakuoinnit nopeutuivat. Valituksia internetkatkoksista on olemassa.",
+        "delayed_text": "Palo hallinnassa, väärän kartan vaikutus väheni 50%. Jotkut kansalaiset valittavat rajoituksista."
+    },
+    "pandemic": {
+        "title": "Pandemiaepidemia",
+        "icon": "🏥",
+        "story": "Uusi virus leviää. Vääriä parannuskeinoja ja salaliittoteorioita kiertää. **Tehtävä**: Varmista yleisön pääsy luotettavaan tietoon, pysäytä väärä tieto ja estä terveydenhuoltojärjestelmän romahtaminen.",
+        "advisors": [
+            {
+                "name": "Terveysasiantuntija",
+                "text": "Luo anonyymi kartta ihmisten liikkeiden seuraamiseksi. ✅ Hidastaa tartuntaa ❌ Yksityisyyskeskustelut"
+            },
+            {
+                "name": "IT-Spesialisti",
+                "text": "Havaitse ja korjaa valeuutiset ja parannuskeinot välittömästi. ✅ Väärä tieto vähenee nopeasti ❌ Sensuuripelot"
+            },
+            {
+                "name": "Oikeudellinen Neuvonantaja",
+                "text": "Julista rajoitukset avoimesti. ✅ Turvallisuus taattu ❌ Liialliset rajoitukset vahingoittavat luottamusta"
+            },
+            {
+                "name": "Kasvattaja",
+                "text": "Käytä mobiilipelejä ihmisten valistamiseen. ✅ Pitkän aikavälin tietoisuus ❌ Hidas vaikutus"
+            }
+        ],
+        "action_cards": [
+            {
+                "id": "A",
+                "name": "Elämäntapaväliintulo",
+                "cost": 50,
+                "hr_cost": 20,
+                "speed": "fast",
+                "security_effect": 38,
+                "freedom_cost": 28,
+                "side_effect_risk": 0.35,
+                "safeguard_reduction": 0.55,
+                "tooltip": "Interaktiivinen kartta, joka näyttää riskialueet.\nPlussat (+): Turvallinen liikkuminen, vähemmän leviämistä.\nMiinukset (−): Yksityisyyttä rajoitettu."
+            },
+            {
+                "id": "B",
+                "name": "Yhteistyö Kansalaisyhteiskunnan Kanssa",
+                "cost": 30,
+                "hr_cost": 15,
+                "speed": "medium",
+                "security_effect": 26,
+                "freedom_cost": 12,
+                "side_effect_risk": 0.2,
+                "safeguard_reduction": 0.6,
+                "tooltip": "Paikallinen tietoverkosto yhteisöjohtajien kautta.\nPlussat (+): Nopea vastaus, oikeuden suoja terveyteen.\nMiinukset (−): Vaikeus koordinaatiossa."
+            },
+            {
+                "id": "C",
+                "name": "Infokampanja",
+                "cost": 20,
+                "hr_cost": 10,
+                "speed": "slow",
+                "security_effect": 15,
+                "freedom_cost": 5,
+                "side_effect_risk": 0.1,
+                "safeguard_reduction": 0.8,
+                "tooltip": "Kouluta valeuutisista ja parannuskeinoista.\nPlussat (+): Pitkän aikavälin vaikutus, vapausystävällinen.\nMiinukset (−): Hidas."
+            }
+        ],
+        "immediate_text": "Valintasi on aktiivinen: {}. Terveysvaroitukset leviävät. Joillakin alueilla on edelleen pääsyongelmia.",
+        "delayed_text": "Väärät parannuskeinot vähenivät 60%. Yleisö on tietoisempi, terveyspalvelut toimivat paremmin."
+    },
+    "election": {
+        "title": "Vaalikausi",
+        "icon": "🗳️",
+        "story": "Vaalit lähestyvät. Deepfake-videot rehottavat ja manipulaatio lisääntyy. Yleisö on hämmentynyt. **Tehtävä**: Havaitse deepfaket, varmista pääsy totuuteen ja suojele vaaliturvallisuutta.",
+        "advisors": [
+            {
+                "name": "Viestintäasiantuntija",
+                "text": "Käytä algoritmeja deepfakejen havaitsemiseen ja varoita käyttäjiä. ✅ Väärä tieto vähenee ❌ Sensuuripelot"
+            },
+            {
+                "name": "Akateemikko",
+                "text": "Julkaise oikeat puheet virallisilla alustoilla. ✅ Luotettava tieto ❌ Epäluottamus virallisiin lähteisiin"
+            },
+            {
+                "name": "Kyberasiantuntija",
+                "text": "Levitä totuutta paikallisten vapaaehtoisten kautta. ✅ Lisää luottamusta ❌ Vaikea koordinaatio"
+            },
+            {
+                "name": "Oikeudellinen Neuvonantaja",
+                "text": "Jokaisen päätöksen on oltava avoin ja valituskelpoinen. ✅ Yleisön luottamus kasvaa ❌ Hidas prosessi"
+            }
+        ],
+        "action_cards": [
+            {
+                "id": "A",
+                "name": "Varoita Käyttäjiä",
+                "cost": 40,
+                "hr_cost": 15,
+                "speed": "fast",
+                "security_effect": 33,
+                "freedom_cost": 18,
+                "side_effect_risk": 0.3,
+                "safeguard_reduction": 0.55,
+                "tooltip": "Deepfake-tunnistusjärjestelmä ja merkitse väärennetty sisältö.\nPlussat (+): Pysäyttää väärän tiedon leviämisen.\nMiinukset (−): Sensuuripelot."
+            },
+            {
+                "id": "B",
+                "name": "Näytä Totuus",
+                "cost": 30,
+                "hr_cost": 15,
+                "speed": "medium",
+                "security_effect": 24,
+                "freedom_cost": 8,
+                "side_effect_risk": 0.15,
+                "safeguard_reduction": 0.65,
+                "tooltip": "Jaa oikeat puheet virallisesti.\nPlussat (+): Pääsy totuuteen.\nMiinukset (−): Epäluottamus virkailijoihin."
+            },
+            {
+                "id": "C",
+                "name": "Tietoisuus & Koulutus",
+                "cost": 20,
+                "hr_cost": 10,
+                "speed": "slow",
+                "security_effect": 12,
+                "freedom_cost": 3,
+                "side_effect_risk": 0.08,
+                "safeguard_reduction": 0.8,
+                "tooltip": "Kouluta deepfakeista ja medialukutaidosta.\nPlussat (+): Pitkän aikavälin tietoisuus.\nMiinukset (−): Hidas."
+            },
+            {
+                "id": "D",
+                "name": "Avoimuuspolitiikka",
+                "cost": 25,
+                "hr_cost": 12,
+                "speed": "slow",
+                "security_effect": 14,
+                "freedom_cost": 4,
+                "side_effect_risk": 0.05,
+                "safeguard_reduction": 0.85,
+                "tooltip": "Kirjaa päätökset julkiseen portaaliin. Perusta valituslautakunta\nPlussat (+): Julkinen luottamus kasvaa.\nMiinukset (−): Hidas prosessi."
+            }
+        ],
+        "immediate_text": "Toimenpide tehty: {}. Jotkut deepfaket pysäytetty, hämmennys jatkuu.",
+        "delayed_text": "Deepfake-vaikutus väheni 50%. Kansainväliset tarkkailijat kutsuivat sitä 'tehokkaaksi mutta herkäksi'."
+    }
+}

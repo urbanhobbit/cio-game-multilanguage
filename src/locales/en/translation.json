@@ -20,11 +20,11 @@
   "start_screen": {
     "profile_select": "Select Profile:",
     "profile_adult": "Adult",
-    "profile_kids": "Child (10–12)",
+    "profile_kids": "Child (15+)",
     "welcome_kids": "Welcome, decision maker!",
     "welcome_adult": "Welcome!",
     "intro_text_kids": "In this game, you are part of a team making decisions for an imaginary country during crises. While trying to protect people during earthquakes, fires, or epidemics, you must also respect their rights to speech and privacy.",
-    "intro_text_adult": "In this game, you are part of a team making information and policy decisions for an island nation during crises. Your duty is to ensure security while protecting freedom of expression and privacy during crises like earthquakes, fires, epidemics, and elections.",
+    "intro_text_adult": "In this game, you are part of a team making information and policy decisions for an island country during crises. Your duty is to ensure security while protecting freedom of expression and privacy during crises like earthquakes, wild fires, epidemics, and elections.",
     "mechanic_text_kids": "In each mission, you will first learn what happened, then listen to advisors, and finally make a decision. Your choice will change indicators like security, freedom, public trust, and fatigue.",
     "mechanic_text_adult": "In each crisis card, you will listen to advisors, choose an action card, and adjust scope, duration, and safeguards. Your choices will affect security, freedom, public trust, resilience, compliance fatigue, budget, and human resources.",
     "scenarios_title_kids": "Missions you will face",
@@ -39,7 +39,9 @@
     "loading": "Loading...",
     "mission": "Mission",
     "mission_yours": "Your Mission",
-    "restart": "Restart Game"
+    "restart": "Restart Game",
+    "before": "Before",
+    "after": "After"
   },
   "phases": {
     "story_title_kids": "What is happening?",
@@ -63,7 +65,9 @@
   },
   "panel": {
     "metrics_title": "Metrics Panel",
-    "fatigue_warning": "When compliance fatigue exceeds 50, legitimacy crisis risk increases. Trust and freedom must be balanced."
+    "fatigue_warning": "When compliance fatigue exceeds 50, legitimacy crisis risk increases. Trust and freedom must be balanced.",
+    "news_title": "News Feed",
+    "no_news": "No news yet..."
   },
   "tutorial": {
     "title": "Short Tutorial (Trial Round)",
@@ -87,11 +91,11 @@
   },
   "settings_labels": {
     "scope_kids": "For whom?",
-    "scope_adult": "Scope",
+    "scope_adult": "SCOPE",
     "duration_kids": "How long?",
-    "duration_adult": "Duration",
+    "duration_adult": "DURATION",
     "safeguards_kids": "Add safeguards",
-    "safeguards_adult": "Safeguards"
+    "safeguards_adult": "SAFEGUARDS"
   },
   "chips": {
     "scope_targeted_kids": "Targeted group only",

@@ -1,74 +1,254 @@
 {
   "earthquake": {
-    "title": "Earthquake Crisis",
+    "title": "Earthquake",
     "icon": "🏚️",
-    "story": "A strong earthquake hit the island in the early morning. Internet is down in some areas, not everyone can access aid info, and fake news is spreading on social media. **Mission**: Spread correct info fast and ensure people are safe.",
+    "story": "Earthquake happened. Internet is messy, false information is spreading **Mission**: Spread truth and keep safe.",
     "advisors": [
-      {"name": "Security Guard","text": "We can slow down social media to reduce panic, but some teens might feel restricted."},
-      {"name": "Legal Advisor","text": "Instead of broad restriction, let's make emergency aid info visible to everyone. It's fairer."},
-      {"name": "Counselor","text": "Let's share calming messages. This builds trust."},
-      {"name": "Tech Specialist","text": "Announce aid points via mass SMS. Fast and effective."}
+      {
+        "name": "Security Expert",
+        "text": "Slow down social media to stop panic."
+      },
+      {
+        "name": "Legal Advisor",
+        "text": "Make aid info visible instead of blocking."
+      },
+      {
+        "name": "Political Counselor",
+        "text": "Share calming messages."
+      },
+      {
+        "name": "Tech Expert",
+        "text": "Send mass SMS for aid points."
+      }
     ],
     "action_cards": [
-      {"id": "A","name": "Slow Down Social Media","cost": 30,"hr_cost": 10,"speed": "fast","security_effect": 35,"freedom_cost": 20,"side_effect_risk": 0.3,"safeguard_reduction": 0.5,"tooltip": "Reduces fake news but lowers freedom feeling."},
-      {"id": "B","name": "Platform Harmony","cost": 20,"hr_cost": 8,"speed": "medium","security_effect": 22,"freedom_cost": 10,"side_effect_risk": 0.18,"safeguard_reduction": 0.6,"tooltip": "Highlight true info and tag fake news."},
-      {"id": "C","name": "Informative Messages","cost": 10,"hr_cost": 6,"speed": "slow","security_effect": 12,"freedom_cost": 3,"side_effect_risk": 0.08,"safeguard_reduction": 0.8,"tooltip": "Sharing calming and educational public messages."}
+      {
+        "id": "A",
+        "name": "Slow Down Social Media",
+        "cost": 30,
+        "hr_cost": 10,
+        "speed": "fast",
+        "security_effect": 35,
+        "freedom_cost": 20,
+        "side_effect_risk": 0.3,
+        "safeguard_reduction": 0.5,
+        "tooltip": "Reduces fake news but lowers freedom feeling."
+      },
+      {
+        "id": "B",
+        "name": "Platform Harmony",
+        "cost": 20,
+        "hr_cost": 8,
+        "speed": "medium",
+        "security_effect": 22,
+        "freedom_cost": 10,
+        "side_effect_risk": 0.18,
+        "safeguard_reduction": 0.6,
+        "tooltip": "Highlight true info and tag fake news."
+      },
+      {
+        "id": "C",
+        "name": "Informative Messages",
+        "cost": 10,
+        "hr_cost": 6,
+        "speed": "slow",
+        "security_effect": 12,
+        "freedom_cost": 3,
+        "side_effect_risk": 0.08,
+        "safeguard_reduction": 0.8,
+        "tooltip": "Sharing calming and educational messages."
+      }
     ],
-    "immediate_text": "Your choice is active: {}. Info flow improved in some areas, people are calmer.",
-    "delayed_text": "Fake news impact reduced, aid distribution organized. Some teens discuss restrictions."
+    "immediate_text": "Your choice is active: {}. People are calmer.",
+    "delayed_text": "Fake news reduced."
   },
   "forest_fire": {
     "title": "Forest Fire",
     "icon": "🔥",
-    "story": "A large forest fire started in the south. Fake evacuation info is shared on social media. **Mission**: Ensure teens and families reach correct routes and prevent panic.",
+    "story": "A forest fire started. Fake evacuation information shared. **Mission**: Ensure safety.",
     "advisors": [
-      {"name": "Security Guard","text": "Temporary regional restriction can stop fake routes."},
-      {"name": "Legal Advisor","text": "Making official routes visible is fairer than restricting."},
-      {"name": "Teacher","text": "We can make short videos explaining safe behavior."},
-      {"name": "Tech Specialist","text": "Sending emergency alerts to phones is effective."}
+      {
+        "name": "Security Expert",
+        "text": "Restrict fake route sharing accounts."
+      },
+      {
+        "name": "Legal Expert",
+        "text": "Show official routes clearly."
+      },
+      {
+        "name": "Teacher",
+        "text": "Make safety videos."
+      },
+      {
+        "name": "Tech Expert",
+        "text": "Send phone alerts."
+      }
     ],
     "action_cards": [
-      {"id": "A","name": "Block False Info","cost": 25,"hr_cost": 10,"speed": "fast","security_effect": 30,"freedom_cost": 15,"side_effect_risk": 0.25,"safeguard_reduction": 0.5,"tooltip": "Stops fake evacuation info fast but reduces freedom feeling."},
-      {"id": "B","name": "Warning Messages","cost": 20,"hr_cost": 8,"speed": "medium","security_effect": 24,"freedom_cost": 8,"side_effect_risk": 0.12,"safeguard_reduction": 0.6,"tooltip": "Correct evacuation routes sent to phones."},
-      {"id": "C","name": "School & NGO Collab","cost": 10,"hr_cost": 5,"speed": "slow","security_effect": 10,"freedom_cost": 3,"side_effect_risk": 0.05,"safeguard_reduction": 0.8,"tooltip": "Informative content presented to teens."}
+      {
+        "id": "A",
+        "name": "Block False Info",
+        "cost": 25,
+        "hr_cost": 10,
+        "speed": "fast",
+        "security_effect": 30,
+        "freedom_cost": 15,
+        "side_effect_risk": 0.25,
+        "safeguard_reduction": 0.5,
+        "tooltip": "Stops fake info fast but reduces freedom."
+      },
+      {
+        "id": "B",
+        "name": "Warning Messages",
+        "cost": 20,
+        "hr_cost": 8,
+        "speed": "medium",
+        "security_effect": 24,
+        "freedom_cost": 8,
+        "side_effect_risk": 0.12,
+        "safeguard_reduction": 0.6,
+        "tooltip": "Correct routes sent to phones."
+      },
+      {
+        "id": "C",
+        "name": "School Collaboration",
+        "cost": 10,
+        "hr_cost": 5,
+        "speed": "slow",
+        "security_effect": 10,
+        "freedom_cost": 3,
+        "side_effect_risk": 0.05,
+        "safeguard_reduction": 0.8,
+        "tooltip": "Info content for teens."
+      }
     ],
-    "immediate_text": "Your choice is active: {}. Evacuations sped up, some teens discuss delays.",
-    "delayed_text": "Fire contained; fake routes impact greatly reduced."
+    "immediate_text": "Your choice is active: {}. Evacuations sped up.",
+    "delayed_text": "Fire contained."
   },
   "pandemic": {
-    "title": "Pandemic Period",
+    "title": "Pandemic",
     "icon": "🏥",
-    "story": "A disease is spreading fast. Fake cures and conspiracy theories are circulating. **Mission**: Ensure teens access reliable info and increase rule compliance.",
+    "story": "Virus spreading. Fake cures around. **Mission**: Share reliable info.",
     "advisors": [
-      {"name": "Health Expert","text": "We can set up an alert system showing risky areas."},
-      {"name": "Tech Specialist","text": "We can use notifications tagging false info."},
-      {"name": "Legal Advisor","text": "Restrictions are accepted more if clearly justified."},
-      {"name": "Youth Worker","text": "We can prepare short info videos for teens."}
+      {
+        "name": "Health Expert",
+        "text": "Alert system for risky areas."
+      },
+      {
+        "name": "Tech Expert",
+        "text": "Tag false info."
+      },
+      {
+        "name": "Law Expert",
+        "text": "Explain restrictions clearly."
+      },
+      {
+        "name": "Teacher",
+        "text": "Prepare short information videos."
+      }
     ],
     "action_cards": [
-      {"id": "A","name": "Risk Map","cost": 35,"hr_cost": 12,"speed": "fast","security_effect": 30,"freedom_cost": 18,"side_effect_risk": 0.22,"safeguard_reduction": 0.55,"tooltip": "Risky areas notified; some teens find it too controlling."},
-      {"id": "B","name": "Local Info","cost": 20,"hr_cost": 10,"speed": "medium","security_effect": 20,"freedom_cost": 8,"side_effect_risk": 0.15,"safeguard_reduction": 0.6,"tooltip": "Info network established in neighborhoods."},
-      {"id": "C","name": "Short Edu Videos","cost": 10,"hr_cost": 5,"speed": "slow","security_effect": 12,"freedom_cost": 3,"side_effect_risk": 0.05,"safeguard_reduction": 0.8,"tooltip": "Correct disease info explained suitably for teens."}
+      {
+        "id": "A",
+        "name": "Risk Map",
+        "cost": 35,
+        "hr_cost": 12,
+        "speed": "fast",
+        "security_effect": 30,
+        "freedom_cost": 18,
+        "side_effect_risk": 0.22,
+        "safeguard_reduction": 0.55,
+        "tooltip": "Risky areas notified, some may find it restrictive."
+      },
+      {
+        "id": "B",
+        "name": "Local Info",
+        "cost": 20,
+        "hr_cost": 10,
+        "speed": "medium",
+        "security_effect": 20,
+        "freedom_cost": 8,
+        "side_effect_risk": 0.15,
+        "safeguard_reduction": 0.6,
+        "tooltip": "Establish neighborhood information network."
+      },
+      {
+        "id": "C",
+        "name": "Short Information Videos",
+        "cost": 10,
+        "hr_cost": 5,
+        "speed": "slow",
+        "security_effect": 12,
+        "freedom_cost": 3,
+        "side_effect_risk": 0.05,
+        "safeguard_reduction": 0.8,
+        "tooltip": "Telling correct Information about the pandemic."
+      }
     ],
-    "immediate_text": "Your choice is active: {}. Info flow sped up; access issues remain in some areas.",
-    "delayed_text": "False info reduced, teens comply with rules more."
+    "immediate_text": "Your choice is active: {}. Info flow sped up.",
+    "delayed_text": "False info reduced."
   },
   "election": {
-    "title": "Election Period",
+    "title": "Election",
     "icon": "🗳️",
-    "story": "Fake videos and edited content circulate as election nears. Teens don't know who to trust. **Mission**: Ensure teens reach correct info and protect election security.",
+    "story": "Fake videos around. **Mission**: Protect truth.",
     "advisors": [
-      {"name": "Comms Expert","text": "Adding warning tags to fake videos reduces confusion."},
-      {"name": "Teacher","text": "Let's prepare examples teaching how to spot truth."},
-      {"name": "Cyber Expert","text": "We can organize volunteer teams for face-to-face info."},
-      {"name": "Legal Advisor","text": "If every decision is transparent, teens won't suspect censorship."}
+      {
+        "name": "Communication Expert",
+        "text": "Add warning tags."
+      },
+      {
+        "name": "Teacher",
+        "text": "Teach spotting truth."
+      },
+      {
+        "name": "Cyber Expert",
+        "text": "Explain how it works by voluntary groups"
+      },
+      {
+        "name": "Legal Expert",
+        "text": "Transparent decisions."
+      }
     ],
     "action_cards": [
-      {"id": "A","name": "Fake Content Warning","cost": 25,"hr_cost": 10,"speed": "fast","security_effect": 28,"freedom_cost": 10,"side_effect_risk": 0.2,"safeguard_reduction": 0.55,"tooltip": "Adding explanation tags to fake videos."},
-      {"id": "B","name": "Share Truth","cost": 20,"hr_cost": 8,"speed": "medium","security_effect": 18,"freedom_cost": 5,"side_effect_risk": 0.12,"safeguard_reduction": 0.65,"tooltip": "Spreading real speeches and verified info."},
-      {"id": "C","name": "Media Literacy","cost": 10,"hr_cost": 5,"speed": "slow","security_effect": 10,"freedom_cost": 2,"side_effect_risk": 0.05,"safeguard_reduction": 0.85,"tooltip": "Teaching teens how to spot fake content."}
+      {
+        "id": "A",
+        "name": "Fake Content Warning",
+        "cost": 25,
+        "hr_cost": 10,
+        "speed": "fast",
+        "security_effect": 28,
+        "freedom_cost": 10,
+        "side_effect_risk": 0.2,
+        "safeguard_reduction": 0.55,
+        "tooltip": "Adding tags to fake videos."
+      },
+      {
+        "id": "B",
+        "name": "Share Truth",
+        "cost": 20,
+        "hr_cost": 8,
+        "speed": "medium",
+        "security_effect": 18,
+        "freedom_cost": 5,
+        "side_effect_risk": 0.12,
+        "safeguard_reduction": 0.65,
+        "tooltip": "Spreading real speeches."
+      },
+      {
+        "id": "C",
+        "name": "Media Literacy",
+        "cost": 10,
+        "hr_cost": 5,
+        "speed": "slow",
+        "security_effect": 10,
+        "freedom_cost": 2,
+        "side_effect_risk": 0.05,
+        "safeguard_reduction": 0.85,
+        "tooltip": "Teaching how to spot fake content."
+      }
     ],
-    "immediate_text": "Your choice is active: {}. Some fake videos stopped, but debates continue.",
-    "delayed_text": "False info impact reduced; teens trust the election process more."
+    "immediate_text": "Your choice is active: {}. Fake videos stopped.",
+    "delayed_text": "Confidence of youth increases."
   }
 }

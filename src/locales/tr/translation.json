@@ -20,7 +20,7 @@
   "start_screen": {
     "profile_select": "Profil seç:",
     "profile_adult": "Yetişkin",
-    "profile_kids": "Çocuk (10–12)",
+    "profile_kids": "Çocuk (15+)",
     "welcome_kids": "Hoş Geldin, karar verici!",
     "welcome_adult": "Hoş Geldin!",
     "intro_text_kids": "Bu oyunda hayali bir ülkede kriz zamanlarında karar veren ekibin parçasısın. Deprem, yangın, salgın gibi durumlarda insanları korumaya çalışırken, onların konuşma ve gizlilik haklarına da saygı göstermen gerekiyor.",
@@ -39,7 +39,9 @@
     "loading": "Yükleniyor...",
     "mission": "Görev",
     "mission_yours": "Görevin",
-    "restart": "Baştan Başla"
+    "restart": "Baştan Başla",
+    "before": "Önce",
+    "after": "Sonra"
   },
   "phases": {
     "story_title_kids": "Ne oluyor?",
