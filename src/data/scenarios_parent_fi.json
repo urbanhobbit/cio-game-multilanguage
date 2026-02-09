@@ -65,7 +65,7 @@
     "forest_fire": {
         "title": "Metsäpalo",
         "icon": "🔥",
-        "story": "Suuri metsäpalo syttyi saaren eteläosassa. Vääriä evakuointikarttoja kiertää sosiaalisessa mediassa. **Tehtävä**: Varmista turvallisuus ja toimita oikeaa tietoa samalla kun suojelet vapauksia CIO:na.",
+        "story": "Suuri metsäpalo syttyi saaren eteläosassa. Vääriä evakuointikarttoja kiertää sosiaalisessa mediassa. **Tehtävä**: Varmista turvallisuus ja toimita oikeaa tietoa samalla kun suojelet vapauksia InfoChief:na.",
         "advisors": [
             {
                 "name": "Turvallisuusasiantuntija",
